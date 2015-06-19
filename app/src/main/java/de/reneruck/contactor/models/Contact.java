@@ -12,6 +12,15 @@ public class Contact {
     private String phoneWork;
     private String phonePrivate;
 
+    public Contact(int id, String firstName, String lastName, String email, String phoneWork, String phonePrivate) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.phoneWork = phoneWork;
+        this.phonePrivate = phonePrivate;
+    }
+
     public String getName() {
         return firstName + " " + lastName;
     }
