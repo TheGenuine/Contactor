@@ -1,6 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="20dp">
 
-</LinearLayout>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/contact_image"
+            android:src="@android:mipmap/sym_def_app_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="80dp"
+            android:maxHeight="80dp"
+            android:layout_marginRight="20dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="John Doe"
+            android:ems="10"
+            android:id="@+id/input_name" />
+    </TableRow>
+    <Space android:layout_height="20dp"></Space>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Phone(Private)"
+            android:id="@+id/text_phone_private"  />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:hint="+00 01 234 567"
+            android:ems="10"
+            android:id="@+id/input_phone_private"
+            />
+    </TableRow>
+
+    <Space android:layout_height="20dp"></Space>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Phone(Work)"
+            android:id="@+id/text_phone_work" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:hint="+00 01 234 567"
+            android:ems="10"
+            android:id="@+id/input_phone_work"/>
+    </TableRow>
+    <Space android:layout_height="20dp"></Space>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Email"
+            android:id="@+id/text_email" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="my@email.com"
+            android:ems="10"
+            android:id="@+id/input_email"/>
+    </TableRow>
+
+</TableLayout>
