@@ -1,0 +1,16 @@
+package de.reneruck.contactor;
+
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+
+/**
+ * Created by reneruck on 19/06/15.
+ */
+public class EditContactActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.edit_contact);
+    }
+}
