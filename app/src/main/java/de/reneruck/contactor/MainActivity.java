@@ -1,5 +1,6 @@
 package de.reneruck.contactor;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
@@ -41,7 +42,8 @@ public class MainActivity extends AppCompatActivity {
     private View.OnClickListener add_contact_listener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            Toast.makeText(getApplicationContext(), "Add new Contact", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(getApplicationContext(), EditContactActivity.class);
+            startActivity(intent);
         }
     };
 }
