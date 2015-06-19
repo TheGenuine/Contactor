@@ -11,6 +11,16 @@ public class ContactsOpenHelper extends SQLiteOpenHelper {
 
     public ContactsOpenHelper(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
         super(context, name, factory, version);
+    private static final int DATABASE_VERSION = 1;
+    public static final String CONTACTS_TABLE_NAME = "contacts";
+    private static final String CONTACTS_TABLE_CREATE =
+            "CREATE TABLE " + CONTACTS_TABLE_NAME + " (" +
+                    "_id INTEGER PRIMARY KEY autoincrement," +
+                    "firstName TEXT, " +
+                    "lastName TEXT," +
+                    "email TEXT," +
+                    "phonePrivate TEXT," +
+                    "phoneWork TEXT);";
     }
 
     @Override
