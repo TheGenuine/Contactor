@@ -9,8 +9,6 @@ import android.database.sqlite.SQLiteOpenHelper;
  */
 public class ContactsOpenHelper extends SQLiteOpenHelper {
 
-    public ContactsOpenHelper(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
-        super(context, name, factory, version);
     private static final int DATABASE_VERSION = 1;
     public static final String CONTACTS_TABLE_NAME = "contacts";
     private static final String CONTACTS_TABLE_CREATE =
@@ -21,6 +19,9 @@ public class ContactsOpenHelper extends SQLiteOpenHelper {
                     "email TEXT," +
                     "phonePrivate TEXT," +
                     "phoneWork TEXT);";
+
+    public ContactsOpenHelper(Context context) {
+        super(context, CONTACTS_TABLE_NAME, null, DATABASE_VERSION);
     }
 
     @Override
