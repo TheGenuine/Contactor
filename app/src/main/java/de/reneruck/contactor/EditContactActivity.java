@@ -3,6 +3,7 @@ package de.reneruck.contactor;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.EditText;
 
 import de.reneruck.contactor.models.Contact;
 
@@ -24,7 +25,15 @@ public class EditContactActivity extends AppCompatActivity {
 
         if (this.currentContact.getId() != -1) {
             loadContactData();
+            populateFields();
         }
+    }
+
+    private void populateFields() {
+        ((EditText) findViewById(R.id.input_name)).setText(this.currentContact.getName());
+        ((EditText) findViewById(R.id.input_email)).setText(this.currentContact.getEmail());
+        ((EditText) findViewById(R.id.input_phone_private)).setText(this.currentContact.getPhonePrivate());
+        ((EditText) findViewById(R.id.input_phone_work)).setText(this.currentContact.getPhoneWork());
     }
 
     private void loadContactData() {
