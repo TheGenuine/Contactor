@@ -50,10 +50,10 @@ public class EditContactActivity extends AppCompatActivity {
         switch(id){
             case R.id.action_save:
                 if(updateContact()){
-                    Toast.makeText(getApplicationContext(), "Contact saved", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), R.string.contact_saved, Toast.LENGTH_LONG).show();
                     finish();
                 } else {
-                    Toast.makeText(getApplicationContext(), "Couldn't save this contact, try again", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), R.string.failed_save, Toast.LENGTH_LONG).show();
                 }
         }
 

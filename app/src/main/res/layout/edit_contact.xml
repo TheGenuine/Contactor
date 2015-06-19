@@ -19,7 +19,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
-            android:hint="John Doe"
+            android:hint="@string/hint_name"
             android:ems="10"
             android:id="@+id/input_name" />
     </TableRow>
@@ -32,7 +32,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="Phone(Private)"
+            android:text="@string/text_phone_private"
             android:id="@+id/text_phone_private"  />
 
         <EditText
@@ -53,7 +53,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="Phone(Work)"
+            android:text="@string/text_phone_work"
             android:id="@+id/text_phone_work" />
 
         <EditText
@@ -79,7 +79,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textEmailAddress"
-            android:hint="my@email.com"
+            android:hint="@string/hint_email"
             android:ems="10"
             android:id="@+id/input_email"/>
     </TableRow>

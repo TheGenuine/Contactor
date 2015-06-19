@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Contactor</string>
+
+    <string name="action_settings">Einstellungen</string>
+    <string name="action_save">Speichern</string>
+    <string name="action_add">Neuer Kontakt</string>
+    <string name="hint_name">Max Musterman</string>
+    <string name="text_phone_private">Telephon(privat)</string>
+    <string name="text_phone_work">Telephon(Geschäftl.)</string>
+    <string name="hint_email">meine@email.de</string>
+    <string name="search">Suchen…</string>
+    <string name="text_no_contacts">Keine Kontakte gefunden</string>
+    <string name="text_add_contact">+ Neuer Kontakt</string>
+    <string name="contact_saved">Kontakt gespeichert</string>
+    <string name="failed_save">Fehler beim speicher, versuch es nochmal</string>
+</resources>

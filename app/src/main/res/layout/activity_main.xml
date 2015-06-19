@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/editText"
-        android:hint="search ..."/>
+        android:hint="@string/search"/>
 
     <ListView
         android:id="@+id/list_contacts"
@@ -31,14 +31,14 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="No Contacts"
+            android:text="@string/text_no_contacts"
             android:layout_marginBottom="15dip"
             android:gravity="center_horizontal"/>
         <Button
             android:id="@+id/button_add_contact"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="+ add a Contact"
+            android:text="@string/text_add_contact"
             android:textSize="@dimen/abc_text_size_large_material"
             android:textStyle="bold"
             android:layout_gravity="center_horizontal"/>
