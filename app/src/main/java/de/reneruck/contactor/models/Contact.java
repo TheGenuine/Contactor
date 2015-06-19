@@ -1,5 +1,7 @@
 package de.reneruck.contactor.models;
 
+import android.database.Cursor;
+
 /**
  * Created by reneruck on 19/06/15.
  */
@@ -19,6 +21,22 @@ public class Contact {
         this.email = email;
         this.phoneWork = phoneWork;
         this.phonePrivate = phonePrivate;
+    }
+
+    public Contact(Cursor cursor) {
+        String[] columnNames = cursor.getColumnNames();
+        new Contact(
+                cursor.getInt(cursor.getColumnIndex("_id")),
+                cursor.getString(cursor.getColumnIndex("firstName")),
+                cursor.getString(cursor.getColumnIndex("lastName")),
+                cursor.getString(cursor.getColumnIndex("email")),
+                cursor.getString(cursor.getColumnIndex("phoneWork")),
+                cursor.getString(cursor.getColumnIndex("phonePrivate"))
+        );
+    }
+
+    public Contact(int id) {
+        this.id = id;
     }
 
     public String getName() {
